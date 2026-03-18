@@ -53,12 +53,12 @@
     </style>
     
     <script
-    crossorigin="anonymous"
-    type="application/javascript"
-    src="https://cdn.jsdelivr.net/npm/@qlik/embed-web-components@1/dist/index.min.js"
-    data-host="https://l676lvg3emfvcq2.us.qlikcloud.com"
-    data-web-integration-id="deldUOnOAI1lAtiqRYAfZbG0_OkzkJHs"
-    data-cross-site-cookies="true"
+        crossorigin="anonymous"
+        type="application/javascript"
+        src="https://cdn.jsdelivr.net/npm/@qlik/embed-web-components@1/dist/index.min.js"
+        data-host="https://l676lvg3emfvcq2.us.qlikcloud.com"
+        data-auth-type="webintegration"
+        data-web-integration-id="deldUOnOAI1lAtiqRYAfZbG0_OkzkJHs"
     ></script>
     
 </head>
@@ -74,25 +74,21 @@
 
     <div class="card">
         <h2>Ventas y Beneficio por Categoría</h2>
-        <qlik-embed 
-            ui="analytics/chart" 
-            app-id="f6b21137-f398-4584-a088-d3d467c7a899" 
-            object-id="QqJjE" 
-            theme="Sense Horizonte" 
-            iframe="true" 
-            preview="true">
+        <qlik-embed
+            ui="analytics/chart"
+            app-id="f6b21137-f398-4584-a088-d3d467c7a899"
+            object-id="QqJjE"
+            theme="Sense Horizonte">
         </qlik-embed>
     </div>
 
     <div class="card">
         <h2>Evolución Temporal de Ventas</h2>
-        <qlik-embed 
-            ui="analytics/chart" 
-            app-id="f6b21137-f398-4584-a088-d3d467c7a899" 
-            object-id="BpnYa" 
-            theme="Sense Horizonte" 
-            iframe="true" 
-            preview="true">
+        <qlik-embed
+            ui="analytics/chart"
+            app-id="f6b21137-f398-4584-a088-d3d467c7a899"
+            object-id="BpnYa"
+            theme="Sense Horizonte">
         </qlik-embed>
 
 </div>
