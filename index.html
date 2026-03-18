@@ -51,6 +51,16 @@
             color: #666;
         }
     </style>
+    <script
+        crossorigin="anonymous"
+        type="application/javascript"
+        src="https://cdn.jsdelivr.net/npm/@qlik/embed-web-components@1/dist/index.min.js"
+        data-host="https://l676lvg3emfvcq2.us.qlikcloud.com/sense/app/f6b21137-f398-4584-a088-d3d467c7a899"
+        data-client-id="deldUOnOAI1lAtiqRYAfZbG0_OkzkJHs"
+        data-redirect-uri="https://pammonse.github.io/superstore-portal/oauth-callback.html"
+        data-auto-redirect="true"
+        data-access-token-storage="session"
+    ></script>
 </head>
 
 <body>
@@ -64,13 +74,20 @@
 
     <div class="card">
         <h2>Ventas y Beneficio por Categoría</h2>
-        <iframe src="https://l676lvg3emfvcq2.us.qlikcloud.com/single/?appid=f6b21137-f398-4584-a088-d3d467c7a899&obj=QqJjE&theme=horizon&opt=ctxmenu,currsel" style="border:none;width:100%;height:100%;"></iframe>
+        <qlik-embed
+            ui="analytics/chart"
+            app-id="TU-APP-ID"
+            object-id="ID-GRAFICO-VENTAS-CATEGORIA">
+        </qlik-embed>
     </div>
 
     <div class="card">
         <h2>Evolución Mensual de Ventas</h2>
-        <iframe src="https://l676lvg3emfvcq2.us.qlikcloud.com/single/?appid=f6b21137-f398-4584-a088-d3d467c7a899&obj=BpnYa&theme=horizon&opt=ctxmenu,currsel" style="border:none;width:100%;height:100%;"></iframe>
-    </div>
+        <qlik-embed
+            ui="analytics/chart"
+            app-id="TU-APP-ID"
+            object-id="ID-GRAFICO-EVOLUCION">
+        </qlik-embed>
 
 </div>
 
