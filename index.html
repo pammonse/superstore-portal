@@ -82,12 +82,6 @@
     <h1>Portal Analítico – SuperStore</h1>
     <p>Integración de dashboards Qlik en entorno web</p>
 </header>
-
-<div style="background:white; padding:10px 40px; box-shadow: 0 2px 4px rgba(0,0,0,0.06);">
-    <button onclick="clearSelections()" style="background:#1f2a44; color:white; border:none; padding:8px 20px; border-radius:6px; cursor:pointer; font-size:14px;">
-        🔄 Limpiar filtros
-    </button>
-</div>
     
 <div class="container">
 
@@ -118,17 +112,6 @@
 <footer>
     Proyecto Hackatón – Pamela Luna Sepúlveda - Febrero 2026
 </footer>
-
-<script>
-async function clearSelections() {
-    const embeds = document.querySelectorAll('qlik-embed');
-    for (const embed of embeds) {
-        const api = await embed.getRefApi();
-        const app = await api.getDoc();
-        await app.clearAll();
-    }
-}
-</script>
     
 </body>
 </html>
